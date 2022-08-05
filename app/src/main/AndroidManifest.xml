@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.WomensSafety">
-        <activity android:name=".Home_page.Home_screen"></activity>
-        <activity android:name=".SplashScreen.Splash_screen">
+        <activity android:name=".activity.HomeScreenActivity"></activity>
+        <activity android:name=".activity.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginPage.Details_page2" />
-        <activity android:name=".LoginPage.Welcome_page1" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.DetailsPageActivity" />
+        <activity android:name=".activity.WelcomePageActivity" />
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

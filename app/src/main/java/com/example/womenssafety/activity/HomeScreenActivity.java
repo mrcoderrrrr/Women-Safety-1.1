@@ -1,17 +1,15 @@
-package com.example.womenssafety.Home_page;
+package com.example.womenssafety.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.womenssafety.Fuction.Fake_Call;
 import com.example.womenssafety.R;
 
-public class Home_screen extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity {
     CardView fakecard, screamcard, msgcard, gpscard, emgcard;
 
     @Override
@@ -29,8 +27,8 @@ public class Home_screen extends AppCompatActivity {
         fakecard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.gridView,new Fake_Call()).commit();
+               /* FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.gridView,new Fake_Call()).commit();*/
 
             }
         });

@@ -1,4 +1,4 @@
-package com.example.womenssafety.LoginPage;
+package com.example.womenssafety.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.example.womenssafety.R;
 
-public class Welcome_page1 extends AppCompatActivity {
+public class WelcomePageActivity extends AppCompatActivity {
     TextView welcome,womentxt,next;
     Intent intent=getIntent();
     Animation welcome_anim,women_anim;
@@ -33,7 +33,7 @@ public class Welcome_page1 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent details=new Intent(getApplicationContext(),Details_page2.class);
+                Intent details=new Intent(getApplicationContext(), DetailsPageActivity.class);
                 startActivity(details);
             }
         });

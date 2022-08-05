@@ -1,4 +1,4 @@
-package com.example.womenssafety.LoginPage;
+package com.example.womenssafety.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,10 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.womenssafety.Home_page.Home_screen;
 import com.example.womenssafety.R;
 
-public class Details_page2 extends AppCompatActivity {
+public class DetailsPageActivity extends AppCompatActivity {
     TextView entertxt, nametxt, mobiletxt, addresstxt;
     EditText name, mobile, address;
     Button submit;
@@ -39,7 +38,7 @@ public class Details_page2 extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent home_page=new Intent(getApplicationContext(), Home_screen.class);
+                Intent home_page=new Intent(getApplicationContext(), HomeScreenActivity.class);
                 startActivity(home_page);
             }
         });

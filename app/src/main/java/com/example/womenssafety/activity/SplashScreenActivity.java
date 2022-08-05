@@ -1,4 +1,4 @@
-package com.example.womenssafety.SplashScreen;
+package com.example.womenssafety.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,12 +10,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.womenssafety.MainActivity;
 import com.example.womenssafety.R;
 
-import org.w3c.dom.Text;
-
-public class Splash_screen extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +29,7 @@ public class Splash_screen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Splash_screen.this, MainActivity.class));
+                startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
                 finish();
             }
         },2000);

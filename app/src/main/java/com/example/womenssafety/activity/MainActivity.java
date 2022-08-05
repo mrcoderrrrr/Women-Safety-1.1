@@ -1,4 +1,4 @@
-package com.example.womenssafety;
+package com.example.womenssafety.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -7,11 +7,10 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.womenssafety.LoginPage.viewPagerAdapter;
+import com.example.womenssafety.adapter.ViewPagerAdapter;
+import com.example.womenssafety.R;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
-
-import java.nio.file.Files;
 
 public class MainActivity extends AppCompatActivity {
 ImageView logo;
@@ -19,7 +18,7 @@ TextView logotxt;
 TabLayout tabLayout;
 TabItem logintab,registertab;
 ViewPager viewPager;
-viewPagerAdapter adapter;
+ViewPagerAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,7 @@ viewPagerAdapter adapter;
         logintab=findViewById(R.id.logintab);
         registertab= findViewById(R.id.registertab);
         viewPager=findViewById(R.id.viewpager);
-        adapter=new viewPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+        adapter=new ViewPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         tabLayoutclass();
     }
